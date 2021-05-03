@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="style.css">
+<script src="scripts.js"></script>
+
+
+</head>
+<body>
+
+    <!--USERNAME AND EMAIL-->
+    <div>
+        <!--USERNAME FOR REGISTRATION-->
+        <input type="text" id="username" oninput="checkUsername()" placeholder="Username">
+        
+        <!--EMAIL FOR REGISTRATION-->
+        <input type="text" id="email" oninput="checkEmail()" placeholder="Email">
+        <p id="emText"></p>
+    </div>
+
+
+
+    <br>
+
+
+
+    <!-- NAMES -->
+    <div>
+        <!--FIRST NAME FOR REGISTRATION-->
+        <input type="text" id="fname" oninput="checkName()" placeholder="First Name">
+        <p id="fnText"></p>
+        
+        
+        <!--LAST NAME FOR REGISTRATION-->
+        <input type="text" id="lname" oninput="checkName()" placeholder="Last Name">
+        <p id="lnText"></p>        
+    </div>
+    
+
+
+    <br>
+
+
+
+    <!--WORKING-->
+    <div>
+        <!--PASSWORD FOR REGISTRATION-->
+        <input type="password" id="password" oninput="checkPassword();checkConfirmPassword();" placeholder="Password">
+        <p id="pwText"></p>
+        <p id="pwText2"></p>
+        <!--CONFIRM PASSWORD FOR REGISTRATION-->
+        <input type="password" id="confirmPassword" oninput="checkConfirmPassword()" placeholder="Confirm Password">
+        <p id="cpwText"></p>
+
+    </div>
+
+    <div>
+        <input type="button" onclick="validateNav()">
+    </div>
+
+
+</body>
+
+</html>
